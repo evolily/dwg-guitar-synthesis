@@ -4,14 +4,14 @@ function [b, a] = dampingfilter()
 %   a1 controls frequency-dependent gain. For stability, g < 1;
 %   for lowpass response (and stability), -1 < a1 < 0.
 % 
-%   Ref: Välimäki, V., Huopaniemi, J., & Karjalainen, M. (1996). Physical 
+%   Ref: V?lim?ki, V., Huopaniemi, J., & Karjalainen, M. (1996). Physical 
 %   modelling of plucked string instruments with application to real-time 
-%   sound synthesis. J. Audio Eng. Soc, 44(5), 331–353. Retrieved from 
+%   sound synthesis. J. Audio Eng. Soc, 44(5), 331-353. Retrieved from 
 %   http://www.aes.org/e-lib/browse.cfm?elib=7810
 
 % Acoustic guitar
-a = [1 -0.4];
-g = .992;
+a = [1 -0.3];
+g = .995;
 
 % Muted acoustic guitar
 % a = [1 -0.8];
